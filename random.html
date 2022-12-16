@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body>
+	<button type="button" id="btn">Click me</button>
+	<p id="dis"></p>
+	<script>
+		let but=document.getElementById("btn")
+		
+			but.addEventListener("click",random);
+		
+		function random(){
+			var a=Math.trunc(Math.random()*50);
+			document.getElementById("dis").innerHTML=a;
+		}
+	</script>
+	</body>
+</html>
